@@ -1,0 +1,387 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/************************ GENERAL **********************/
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%; 
+    font-family: 'Lato', sans-serif; 
+    font-size: .875rem;
+}
+
+img {
+    max-width: 100%;
+    width: auto; /* pour ie */
+    height: auto;
+    -ms-interpolation-mode: bicubic; /* lissage pour IE */
+    image-rendering: -webkit-optimize-contrast; /* lissage pour Chrome au redimensionnement*/
+}
+
+h1, h2, h3, figcaption {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	color: #eb5d1e;
+	font-weight: 800;
+	text-align: center;
+	margin: 2rem 0 1.5rem 0;
+}
+
+h1 span, h3 {
+	font-size: 1.25rem;
+}
+
+.main {
+	padding: 0 5%;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	text-align: center;
+	line-height: 1.3;
+}
+
+/**** header *****/
+
+header .main {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+header a {
+	padding: 5vh 0;
+}
+
+nav {
+	width: 100%;
+}
+
+nav ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav a {
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #eb5d1e;
+	transition: color .7s;
+	display: inline-block;
+}
+
+nav a:hover, nav a:focus {
+	color: #37302b;
+}
+
+/**** prez *****/
+
+.prez {
+	background: url(theme/img-bg.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 20vh 0;
+	border-top: 1px solid #dde3e9;
+}
+
+h1 {
+	color: #eb5d1e;
+	font-weight: 800;
+}
+
+.more {
+	background-color: #eb5d1e;
+	color: white;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: .5rem;
+	margin: 5vh 0;
+}
+
+/**** .staff ****/
+
+.staff {
+	background-color: #eee;
+	margin-top: 2rem;
+	padding: 1rem 0;
+}
+
+.staff figure {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+figcaption p {
+	margin-bottom: .5rem;
+	font-weight: 900;
+}
+
+.job {
+	font-weight: 400;
+}
+
+/***** services ****/
+
+h3 {
+	font-weight: 800;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	line-height: 1.5;
+}
+
+h3::before {
+	font-family: 'fontAwesome';
+	font-size: 2.5rem;
+}
+
+.print::before {
+	content:"\f02f";
+}
+
+.webdesign::before {
+	content:"\f121";
+}
+
+.photography::before {
+	content:"\f03e";
+}
+
+.cloud::before {
+	content:"\f135";
+}
+
+article {
+	margin-top: 2rem;
+}
+
+/****** .works *****/
+
+.works {
+	background-color: #eee;
+}
+
+.works img {
+	margin-bottom: 2rem;
+}
+
+/***** formulaire *****/
+
+form {
+	background-color: #eee;
+	padding: 1rem;
+	margin: 2rem 0;
+}
+
+input, textarea, select {
+	border: none;
+	box-shadow: none;
+	padding: .5rem;
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+
+label {
+	display: block;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin-bottom: .5rem;
+}
+
+textarea {
+	height: 10rem;
+}
+
+.msg {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+input[type="submit"] {
+	background-color: #eb5d1e;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 900;
+	padding: .5rem;
+	width: 45%;
+	-ms-align-self: flex-end;
+	align-self: flex-end;
+}
+
+/**** footer ******/
+
+footer {
+	background-color: #eb5d1e;
+	color: white;
+	padding: 2rem 0;
+}
+
+footer .main {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.reseaux a {
+	font-family: 'fontAwesome';
+	font-size: 2rem;
+	margin-left: .3rem;
+}
+
+.facebook {
+	color: #3873ae;
+}
+
+.twitter {
+	color: #62c6f8;
+}
+
+.instagram {
+	color: white;
+}
+
+
+/********************* MEDIA QUERIES ********************/
+
+
+@media screen and (min-width: 700px) {
+	.staff, .services, .screenshots {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 1rem;
+	}
+	.staff figure, .services article, .screenshots img {
+		width: 45%;
+	}
+	.screenshots img {
+		height: 45%;
+	}
+
+}
+@media screen and (min-width: 980px) {
+	header .main {
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	nav {
+		width: 70%;
+	}
+	.staff figure, .screenshots img {
+		width: 22%;
+	}
+	form {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+	}
+	.info, .msg {
+		width: 45%;
+	}
+}
