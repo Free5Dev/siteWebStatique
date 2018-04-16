@@ -213,3 +213,47 @@ footer
     text-decoration: none;
     color: #760001;
 }
+/* les media queries */
+@media all and (max-width:1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+    header
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    nav ul
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+    #banniere
+    {
+        display:none;
+    }
+    section
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bull 
+    {
+        display: none;
+    }
+    footer
+    {
+        display: flex;
+       flex-direction: column;
+    }
+    .elementFooter
+    {
+        flex:1;
+    }
+}

@@ -259,3 +259,66 @@ footer h2
     text-transform: uppercase;
     font-family: verdana,serif;
 }
+/* les media queries */
+@media all and (max-width:1024px)
+{
+    body 
+    {
+        width: auto;
+    }
+    header 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   #programme
+   {
+       display: flex;
+       flex-direction: column;
+   }
+   #programme article
+   {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 5px;
+    margin: 5px;
+   }
+   #details
+   {
+       display: flex;
+       flex-direction: column;
+       margin: 15px;
+   }
+   #contact 
+   {
+       display: flex;
+       flex-direction: column;
+       width: auto;
+   }
+   #contact p 
+   {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+
+   }
+   #contact form 
+   {
+       display: flex;
+       flex-direction: column;
+   }
+   hr 
+   {
+       display: none;
+   }
+}
